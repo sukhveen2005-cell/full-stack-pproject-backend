@@ -60,6 +60,9 @@ app.get("/test",(req,res)=>{
   
 });
 */
+app.get("/", (req, res) => {
+  res.send("Backend API is running 🚀");
+});
 
 app.post("/users" , async (req,res)=> {
     const { email, password } = req.body;
